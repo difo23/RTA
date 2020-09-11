@@ -1,0 +1,13 @@
+-- Sample task set
+task set Sample with 5 tasks and 2 locks is
+   -- locks
+   lock Lock_x;
+   lock Lock_y;
+   -- tasks
+   task Task_a is periodic (1, 400, 0, 0, 35, 0, 0, 400, 0) uses lock_x(15);
+   task Task_b is periodic (3, 100, 0, 0, 35, 0, 0, 100, 0) uses lock_x(10), lock_y(10);
+   task Task_c is periodic (2, 500, 0, 0, 65, 0, 0, 250, 0) uses lock_y(20);
+   task Task_d is periodic (4, 150, 0, 0, 15, 0, 0, 50, 0);
+   task Task_int is periodic (5, 100, 0, 0, 10, 0, 0, 100, 0);
+end Sample;
+

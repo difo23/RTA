@@ -1,0 +1,25 @@
+
+
+Response time analysis for task set Sample
+------------------------------------------
+
+Id Task      A PR  Period  Offset  Jitter  Budget   Block Deadline Response Sch
+-- --------- - -- ------- ------- ------- ------- ------- -------- -------- ---
+ 1 Task_int  P  5 100.000   0.000   0.000  10.000   0.000  100.000   10.000 Yes
+ 2 Task_d    P  4 150.000   0.000   0.000  15.000   0.000   50.000   25.000 Yes
+ 3 Task_b    P  3 100.000   0.000   0.000  35.000  20.000  100.000   80.000 Yes
+ 4 Task_c    P  2 500.000   0.000   0.000  65.000  15.000  250.000  200.000 Yes
+ 5 Task_a    P  1 400.000   0.000   0.000  35.000   0.000  400.000  265.000 Yes
+
+
+Priority ceilings for shared resources
+--------------------------------------
+
+Id Name      PR
+-- --------- --
+ 1 Lock_y     3
+ 2 Lock_x     3
+
+
+Total processor utilization :  76.75%
+
